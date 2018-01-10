@@ -69,8 +69,7 @@ pipeline {
  stages {
  stage('build') {
  steps {
-Configure a Jenkins Multibranch Pipeline Linux Academy
-- 5 -
+
  sh 'javac -d . src/*.java'
  sh 'echo Main-Class: Rectangulator > MANIFEST.MF'
  sh 'jar -cvmf MANIFEST.MF rectangle.jar *.class'
